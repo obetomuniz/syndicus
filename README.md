@@ -17,7 +17,7 @@ import { DevTo, Title, Content } from "syndicus"
 
 const Article = () => {
   return (
-    // Repalce {POST_ID} by the Post ID of the post published on DEV.to
+    // Replace {POST_ID} by the Post ID of the post published on DEV.to
     <DevTo article="{POST_ID}">
       <Title />
       <Content />
