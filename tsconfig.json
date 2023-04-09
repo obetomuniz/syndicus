@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["lib/*"]
+    },
+    "module": "esnext",
+    "lib": ["dom", "es2017"],
+    "declaration": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "declarationDir": "types",
+    "outDir": "dist",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "rootDir": "./lib",
+    "strict": true
+  },
+  "include": ["lib/**/*"]
+}
