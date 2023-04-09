@@ -1,7 +1,7 @@
 import React, { FC, memo } from "react"
-import { Article } from "../../../../types"
-import { withMultiContext, MultiContextProps } from "../../../../hoc"
-import { DevToContext } from "../../providers"
+import { Article } from "../../../../../../types"
+import { withMultiContext, MultiContextProps } from "../../../../../../hoc"
+import { DevToContext } from "../../provider"
 
 type ContentProps = {
   className?: string

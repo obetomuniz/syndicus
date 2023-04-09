@@ -6,7 +6,7 @@ import React, {
   useEffect,
 } from "react"
 import { Article } from "../../../../types"
-import { fetchDEVToArticle } from "../../../../platforms"
+import { fetchDEVToArticle } from "../../api"
 
 interface DevToProps extends PropsWithChildren {
   article: string
