@@ -1,6 +1,7 @@
 "use client"
 
-import { DevTo, Title, Content } from "../../../dist/index.esm"
+// @ts-ignore
+import { DevTo, Title, Content } from "syndicus"
 
 const Article = () => {
   return (
