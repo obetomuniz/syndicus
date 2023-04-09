@@ -8,13 +8,13 @@ import React, {
 import { Article } from "../../../../types"
 import { fetchDEVToArticle } from "../../../../platforms"
 
-interface DevToProviderProps extends PropsWithChildren {
+interface DevToProps extends PropsWithChildren {
   article: string
 }
 
 export const DevToContext = createContext<Article | null>({})
 
-export const DevTo: React.FC<DevToProviderProps> = ({ article, children }) => {
+export const DevTo: React.FC<DevToProps> = ({ article, children }) => {
   const [contextValue, setContextValue] = useState<Article | null>({})
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export const DevTo: React.FC<DevToProviderProps> = ({ article, children }) => {
 export const useDevTo = () => {
   const context = useContext(DevToContext)
   if (!context) {
-    throw new Error("useDevTo must be used within a DevToProvider")
+    throw new Error("useDevTo must be used within a DevTo")
   }
   return context
 }
